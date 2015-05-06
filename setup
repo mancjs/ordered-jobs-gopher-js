@@ -1,0 +1,6 @@
+#!/bin/bash
+curl -O https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz
+sudo rm -rf /opt/go
+sudo tar -C /opt -xzf go1.4.2.linux-amd64.tar.gz
+rm go1.4.2.linux-amd64.tar.gz
+go get -u github.com/gopherjs/gopherjs
